@@ -20,6 +20,6 @@ spring:
 ###### 配置 MyBatis 信息
 mybatis:
   ##### 设定 Mapper 文件所在路径
-  mapper-locations: classpath:/mapper/*.Mapper.xml
+  mapper-locations: classpath:/mapper/*/*.Mapper.xml
   ##### 配置实体类别名基础包
-  type-aliases-package: cn.ekgc.socip.pojo.entity
+  type-aliases-package: cn.ekgc.socip.*.pojo.entity
