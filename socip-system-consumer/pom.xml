@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
                                 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<artifactId>socip-data-commons</artifactId>
+	<artifactId>socip-system-consumer</artifactId>
 	<packaging>jar</packaging>
 
 	<!-- 配置使用 Socip Parent 作为项目父级依赖关系 [BEGIN] -->
@@ -15,61 +15,21 @@
 	</parent>
 	<!-- 配置使用 Socip Parent 作为项目父级依赖关系 [END] -->
 
+
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
-		<mybatis-spring-boot-starter.version>2.1.4</mybatis-spring-boot-starter.version>
-		<druid-spring-boot-starter.version>1.2.4</druid-spring-boot-starter.version>
-		<pagehelper-spring-boot-starter.version>1.3.0</pagehelper-spring-boot-starter.version>
 	</properties>
 
 	<dependencies>
-		<!-- 配置 Socip Commons 依赖关系 [BEGIN] -->
+		<!-- 配置使用 Socip Commons 项目依赖关系 [BEGIN] -->
 		<dependency>
 			<groupId>cn.ekgc.socip</groupId>
 			<artifactId>socip-commons</artifactId>
 			<version>${parent.version}</version>
 		</dependency>
-		<!-- 配置 Socip Commons 依赖关系 [END] -->
-
-		<!-- 配置 MySQL Connector Java 依赖关系 [BEGIN] -->
-		<dependency>
-			<groupId>mysql</groupId>
-			<artifactId>mysql-connector-java</artifactId>
-		</dependency>
-		<!-- 配置 MySQL Connector Java 依赖关系 [END] -->
-
-		<!-- 配置 MyBatis Spring Boot Starter 依赖关系 [BEGIN] -->
-		<dependency>
-			<groupId>org.mybatis.spring.boot</groupId>
-			<artifactId>mybatis-spring-boot-starter</artifactId>
-			<version>${mybatis-spring-boot-starter.version}</version>
-		</dependency>
-		<!-- 配置 MyBatis Spring Boot Starter 依赖关系 [END] -->
-
-		<!-- 配置 Druid Spring Boot Starter 依赖关系 [BEGIN] -->
-		<dependency>
-			<groupId>com.alibaba</groupId>
-			<artifactId>druid-spring-boot-starter</artifactId>
-			<version>${druid-spring-boot-starter.version}</version>
-		</dependency>
-		<!-- 配置 Druid Spring Boot Starter 依赖关系 [END] -->
-
-		<!-- 配置 PageHelper Spring Boot Starter 依赖关系 [BEGIN] -->
-		<dependency>
-			<groupId>com.github.pagehelper</groupId>
-			<artifactId>pagehelper-spring-boot-starter</artifactId>
-			<version>${pagehelper-spring-boot-starter.version}</version>
-		</dependency>
-		<!-- 配置 PageHelper Spring Boot Starter 依赖关系 [END] -->
-
-		<!-- 配置 Spring Boot Starter Data Redis 依赖关系 [BEGIN] -->
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-redis</artifactId>
-		</dependency>
-		<!-- 配置 Spring Boot Starter Data Redis 依赖关系 [END] -->
+		<!-- 配置使用 Socip Commons 项目依赖关系 [END] -->
 
 		<dependency>
 			<groupId>junit</groupId>
