@@ -249,9 +249,9 @@ create table car_expense_type(
     primary key (id)
 )Engine=InnoDB charset=utf8mb4 comment='用车费用类型信息表';
 
--- ====== 车辆类型类型信息表：car_brand_type
-drop table if exists car_brand_type;
-create table car_brand_type(
+-- ====== 车辆类型类型信息表：car_brand
+drop table if exists car_brand;
+create table car_brand(
     id varchar(100) not null comment '主键',
     text varchar(100) not null comment '文本',
     code varchar(100) not null comment '编码',

@@ -1,7 +1,6 @@
 package cn.ekgc.socip.base.util;
 
-import cn.ekgc.iovp.base.pojo.vo.PageVO;
-import cn.ekgc.iovp.pojo.entity.Department;
+import cn.ekgc.socip.base.pojo.vo.PageVO;
 import com.github.pagehelper.PageInfo;
 
 import java.util.List;
