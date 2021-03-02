@@ -53,12 +53,14 @@ public class TokenUtil {
 	 * @return
 	 */
 	public static String verifyToken(String token) {
-		try {
-			JWTVerifier verifier = JWT.require(algorithm).build();
-			DecodedJWT jwt = verifier.verify(token);
-			return jwt.getClaim("message").asString();
-		} catch (Exception e) {
-			e.printStackTrace();
+		if (token != null) {
+			try {
+				JWTVerifier verifier = JWT.require(algorithm).build();
+				DecodedJWT jwt = verifier.verify(token);
+				return jwt.getClaim("message").asString();
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
 		}
 		return null;
 	}

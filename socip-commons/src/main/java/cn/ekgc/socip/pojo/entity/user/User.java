@@ -10,4 +10,13 @@ import cn.ekgc.socip.base.pojo.entity.BaseEntity;
  */
 public class User extends BaseEntity {
 	private static final long serialVersionUID = -5756813559787356158L;
+	private String id;                      // 主键
+
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
+	}
 }

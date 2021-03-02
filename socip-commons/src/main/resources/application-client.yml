@@ -1,3 +1,7 @@
+###### 为实现多个功能模块公用一个 Provider，那么必须允许 Provider 重名
+spring:
+  main:
+    allow-bean-definition-overriding: true
 ###### Eureka Client 连接注册中心信息
 eureka:
   client:
